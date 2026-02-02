@@ -1,136 +1,184 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polat Yapı Mermer - İskenderun</title>
+    <title>Polat Yapı Mermer - İskenderun Doğaltaş ve Granit</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <style>
         body { font-family: 'Inter', sans-serif; }
+        /* Mobil menü veya ekstra özel stiller için gerekirse burası kullanılır */
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
 
     <header class="bg-slate-900 text-white py-4 shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <div>
-                <h1 class="text-2xl font-bold tracking-tighter">POLAT YAPI MERMER</h1>
-                <p class="text-xs text-gray-400">İskenderun'un Granit ve Mermer Uzmanı</p>
-            </div>
-            <a href="tel:05324360962" class="bg-yellow-500 hover:bg-yellow-400 text-slate-900 font-bold py-2 px-4 rounded transition duration-300 flex items-center gap-2">
-                <span>📞</span> <span class="hidden md:inline">0532 436 09 62</span>
+            <a href="#" class="block">
+                <h1 class="text-2xl font-bold tracking-tighter text-yellow-500">POLAT YAPI</h1>
+                <span class="text-xs text-gray-300 tracking-widest uppercase">Mermer & Granit Atölyesi</span>
+            </a>
+
+            <a href="tel:05324360962" class="bg-yellow-500 hover:bg-yellow-400 text-slate-900 font-bold py-2 px-5 rounded-full transition duration-300 flex items-center gap-2 shadow-md hover:shadow-yellow-500/50">
+                <span class="text-xl">📞</span> 
+                <span class="hidden md:inline">0532 436 09 62</span>
             </a>
         </div>
     </header>
 
-    <section class="relative bg-slate-800 text-white py-24">
-        <div class="absolute inset-0 overflow-hidden">
-            <img src="urun-vitrini-hero.jpg" alt="Polat Yapı Mermer Ürünleri" class="w-full h-full object-cover opacity-30">
+    <section class="relative bg-slate-800 text-white py-32 flex items-center justify-center">
+        <div class="absolute inset-0 overflow-hidden z-0">
+            <img src="assets/img/hero/urun-vitrini-hero.jpg" 
+                 alt="Polat Yapı Mermer Atölye ve Showroom" 
+                 class="w-full h-full object-cover opacity-30"
+                 onerror="this.src='https://placehold.co/1920x800/1e293b/FFF?text=Polat+Yapi+Mermer'">
         </div>
+        
         <div class="container mx-auto px-4 relative z-10 text-center">
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Mekanlarınıza Değer Katıyoruz</h2>
-            <p class="text-xl mb-8 text-gray-300">Mutfak tezgahından mezar taşına, en kaliteli işçilikle hizmetinizdeyiz.</p>
-            <div class="flex justify-center gap-4">
-                <a href="#urunler" class="border border-white hover:bg-white hover:text-slate-900 py-3 px-6 rounded font-semibold transition">Ürünleri İncele</a>
-                <a href="#iletisim" class="bg-yellow-500 hover:bg-yellow-400 text-slate-900 py-3 px-6 rounded font-semibold transition">Bize Ulaşın</a>
+            <span class="bg-yellow-500 text-slate-900 px-3 py-1 rounded text-xs font-bold uppercase tracking-wide mb-4 inline-block">İskenderun / Hatay</span>
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">Mermere Hayat Veriyoruz</h2>
+            <p class="text-lg md:text-xl mb-10 text-gray-300 max-w-2xl mx-auto">
+                Mutfak tezgahından mezar taşına, basamaktan dış cepheye kadar en kaliteli taşları usta işçilikle buluşturuyoruz.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#katalog" class="bg-white text-slate-900 py-3 px-8 rounded-lg font-bold hover:bg-gray-200 transition shadow-lg">
+                    Ürünleri İncele
+                </a>
+                <a href="https://wa.me/905324360962" target="_blank" class="bg-green-600 text-white py-3 px-8 rounded-lg font-bold hover:bg-green-500 transition shadow-lg flex items-center justify-center gap-2">
+                    <span>💬</span> WhatsApp'tan Yaz
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="urunler" class="py-16 container mx-auto px-4">
-        <div class="text-center mb-12">
-            <h3 class="text-3xl font-bold text-slate-800">Hizmetlerimiz ve Ürünler</h3>
-            <p class="text-gray-600 mt-2">Kaliteli malzeme, usta işçilik.</p>
-        </div>
+<section id="katalog" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-extrabold text-slate-900">Ürün ve Uygulamalar</h3>
+                <p class="text-gray-500 mt-2">İster malzeme türüne göre, ister ihtiyacınıza göre inceleyin.</p>
+            </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                <img src="mutfak-tezgahi.jpg" alt="Mutfak Mermeri" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h4 class="font-bold text-xl mb-2">Granit Tezgah</h4>
-                    <p class="text-gray-600 text-sm">Leke tutmayan, dayanıklı ve şık mutfak tezgahı çözümleri.</p>
+            <div class="flex flex-wrap justify-center gap-3 mb-6">
+                <span class="w-full text-center text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Malzeme Çeşitleri</span>
+                
+                <button data-value="all" data-group="all" class="filter-btn bg-slate-900 text-white px-6 py-2 rounded-lg font-bold shadow-lg transition-all ring-2 ring-offset-2 ring-slate-900">
+                    Tümü
+                </button>
+
+                <button data-value="mermer" data-group="material" class="filter-btn bg-white text-slate-600 border border-gray-200 px-6 py-2 rounded-lg font-bold hover:bg-gray-50 transition-all">
+                    🏛️ Mermer Çeşitleri
+                </button>
+
+                <button data-value="granit" data-group="material" class="filter-btn bg-white text-slate-600 border border-gray-200 px-6 py-2 rounded-lg font-bold hover:bg-gray-50 transition-all">
+                    ✨ Granit Modelleri
+                </button>
+
+                <button data-value="cimstone" data-group="material" class="filter-btn bg-white text-slate-600 border border-gray-200 px-6 py-2 rounded-lg font-bold hover:bg-gray-50 transition-all">
+                    💎 Çimstone & Kuvars
+                </button>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2 mb-12">
+                <span class="w-full text-center text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Uygulama Alanları</span>
+                
+                <button data-value="mutfak" data-group="type" class="filter-btn bg-white text-slate-600 border border-gray-200 px-4 py-2 rounded-full text-sm font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all">
+                    🍽️ Mutfak Tezgahı
+                </button>
+                
+                <button data-value="mezar" data-group="type" class="filter-btn bg-white text-slate-600 border border-gray-200 px-4 py-2 rounded-full text-sm font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all">
+                    ⚰️ Mezar & Kabristan
+                </button>
+
+                <button data-value="merdiven" data-group="type" class="filter-btn bg-white text-slate-600 border border-gray-200 px-4 py-2 rounded-full text-sm font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all">
+                    step Basamak & Merdiven
+                </button>
+
+                <button data-value="denizlik" data-group="type" class="filter-btn bg-white text-slate-600 border border-gray-200 px-4 py-2 rounded-full text-sm font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all">
+                    🪟 Pencere Denizlik
+                </button>
+
+                <button data-value="zemin" data-group="type" class="filter-btn bg-white text-slate-600 border border-gray-200 px-4 py-2 rounded-full text-sm font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all">
+                    🧱 Yer Döşeme
+                </button>
+                
+                <button data-value="cephe" data-group="type" class="filter-btn bg-white text-slate-600 border border-gray-200 px-4 py-2 rounded-full text-sm font-semibold hover:border-yellow-400 hover:text-yellow-600 transition-all">
+                    🏠 Dış Cephe
+                </button>
+            </div>
+
+            <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                <img src="merdiven-basamak.jpg" alt="Merdiven ve Basamak" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h4 class="font-bold text-xl mb-2">Merdiven & Basamak</h4>
-                    <p class="text-gray-600 text-sm">Kaymaz yüzeyli, estetik bina içi ve dışı mermer basamaklar.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                <img src="mezar-tasi.jpg" alt="Mezar Taşı" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h4 class="font-bold text-xl mb-2">Mezar Taşı & Kabristan</h4>
-                    <p class="text-gray-600 text-sm">Özenli işçilikle mermer ve granit mezar modelleri.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                <img src="pencere-denizlik.jpg" alt="Pencere Denizlik" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h4 class="font-bold text-xl mb-2">Pencere Denizlik</h4>
-                    <p class="text-gray-600 text-sm">Yağmura ve güneşe dayanıklı pencere önü mermerleri.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
-                <img src="zemin-kaplama.jpg" alt="Zemin Kaplama" class="w-full h-48 object-cover">
-                <div class="p-6">
-                    <h4 class="font-bold text-xl mb-2">Zemin Kaplama</h4>
-                    <p class="text-gray-600 text-sm">İş yerleri ve konutlar için geniş yüzey mermer döşeme.</p>
-                </div>
-            </div>
-
-            <div class="bg-slate-900 rounded-lg shadow-md overflow-hidden flex flex-col justify-center items-center p-6 text-white text-center">
-                <h4 class="font-bold text-xl mb-4">Özel Siparişiniz mi var?</h4>
-                <p class="text-gray-400 mb-6">Ölçü ve fiyat almak için bizi hemen arayın.</p>
-                <a href="tel:05324360962" class="bg-yellow-500 text-slate-900 py-2 px-6 rounded font-bold hover:bg-yellow-400 transition">Hemen Ara</a>
-            </div>
+            
         </div>
     </section>
 
-    <section id="iletisim" class="bg-gray-100 py-16">
-        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h3 class="text-3xl font-bold mb-6 text-slate-800">İletişim Bilgileri</h3>
-                <ul class="space-y-4 text-lg">
-                    <li class="flex items-start gap-3">
-                        <span class="text-2xl">📍</span>
-                        <span><strong>Adres:</strong><br>Güzelçay, 618. Sk., 31200<br>İskenderun/Hatay</span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="text-2xl">📞</span>
-                        <span><strong>Telefon:</strong><br><a href="tel:05324360962" class="text-blue-600 hover:underline">0532 436 09 62</a></span>
-                    </li>
-                    <li class="flex items-center gap-3">
-                        <span class="text-2xl">⏰</span>
-                        <span><strong>Çalışma Saatleri:</strong><br>Kapanış: 18:00</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="rounded-xl overflow-hidden shadow-lg h-64 md:h-80 bg-slate-300 relative">
-                <div class="w-full h-full flex items-center justify-center bg-slate-200 text-slate-500 font-semibold">
+    <section id="iletisim" class="bg-slate-50 py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-3xl font-bold mb-8 text-slate-900 border-b pb-4">Bize Ulaşın</h3>
+                    <ul class="space-y-6 text-lg">
+                        <li class="flex items-start gap-4">
+                            <div class="bg-yellow-100 p-3 rounded-full text-yellow-600">📍</div>
+                            <div>
+                                <strong class="block text-slate-900">Adresimiz:</strong>
+                                <span class="text-gray-600">Güzelçay, 618. Sk., 31200<br>İskenderun / Hatay</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-blue-100 p-3 rounded-full text-blue-600">📞</div>
+                            <div>
+                                <strong class="block text-slate-900">Telefon & WhatsApp:</strong>
+                                <a href="tel:05324360962" class="text-blue-600 font-semibold hover:underline text-xl">0532 436 09 62</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="bg-green-100 p-3 rounded-full text-green-600">⏰</div>
+                            <div>
+                                <strong class="block text-slate-900">Çalışma Saatleri:</strong>
+                                <span class="text-gray-600">Pazartesi - Cumartesi<br>08:00 - 18:00</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://maps.google.com/?q=Polat+Yapı+Mermer+İskenderun" target="_blank" class="mt-8 block w-full text-center bg-slate-900 text-white py-3 rounded-xl font-bold hover:bg-slate-800 transition">
+                        Yol Tarifi Al 🚗
+                    </a>
+                </div>
+
+                <div class="h-full min-h-[400px] rounded-2xl overflow-hidden shadow-lg border-4 border-white bg-gray-200">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25616.445837265917!2d36.20782719732212!3d36.62504515686108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f5d0014fcb809%3A0xbbb89d81210275db!2sPolat%20Yap%C4%B1%20Mermer!5e0!3m2!1str!2str!4v1769342971822!5m2!1str!2str" 
-                        width="600" 
-                        height="450" 
+                        src="https://maps.google.com/maps?q=Polat%20Yap%C4%B1%20Mermer%20G%C3%BCzel%C3%A7ay%2C%20618.%20Sk.%2C%2031200%20%C4%B0skenderun%2FHatay&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
                         style="border:0;" 
                         allowfullscreen="" 
                         loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Polat Yapı Mermer Konumu">
                     </iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-gray-400 py-8 text-center text-sm">
-        <p>&copy; 2026 Polat Yapı Mermer. Tüm Hakları Saklıdır.</p>
+    <footer class="bg-slate-900 text-gray-400 py-10 border-t border-slate-800">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
+            <p>&copy; 2026 Polat Yapı Mermer. Tüm Hakları Saklıdır.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition">Hakkımızda</a>
+                <a href="#katalog" class="hover:text-white transition">Ürünler</a>
+                <a href="#iletisim" class="hover:text-white transition">İletişim</a>
+            </div>
+        </div>
     </footer>
 
-</body>
+    <script src="js/data.js"></script> <script src="js/app.js"></script>  </body>
 </html>
