@@ -36,7 +36,7 @@ function createCardHTML(item) {
                     <h4 class="text-lg font-bold text-slate-800">${item.title}</h4>
                 </div>
                 <p class="text-gray-500 text-sm mb-4 flex-grow">${item.desc}</p>
-                <a href="https://wa.me/905324360962?text=Merhaba, ${item.title} modeli hakkında bilgi ve fiyat alabilir miyim?" target="_blank" 
+                <a href="https://wa.me/05317694609?text=Merhaba, ${item.title} modeli hakkında bilgi ve fiyat alabilir miyim?" target="_blank" 
                    class="w-full text-center bg-slate-50 hover:bg-green-500 hover:text-white border border-slate-200 text-slate-800 py-2 rounded-lg text-sm font-bold transition-colors flex items-center justify-center gap-2">
                    <span>WhatsApp ile Sor</span> 💬
                 </a>
